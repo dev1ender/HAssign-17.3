@@ -52,3 +52,18 @@ o	Interface for creating, deleting, updating tables
 •	HBase uses ZooKeeper as a distributed coordination service to maintain server state in the cluster.
 •	Zookeeper maintains which servers are alive and available, and provides server failure notification.
 •	Zookeeper uses consensus to guarantee common shared state. Note that there should be three or five machines for consensus.
+
+5.RDBMS VS HBASE
+RDBMS
+•	It is row – oriented databases
+•	Its table have fixed-schema
+•	Its table guarantee ACID properties
+•	Its uses sql (Structured query language ) to query the data 
+
+
+HBASE 
+•	Its is a distributed ,column-oriented data storage system
+•	Its tables do not have fixed-schema
+•	Its tables guarantee consistency  and partition tolerance
+•	Its uses Java Client API and Jruby
+
