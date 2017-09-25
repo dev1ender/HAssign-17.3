@@ -1,0 +1,19 @@
+--Task1 
+create 'clicks','hits'
+alter 'clicks',NAME=>'hits' ,VERSIONS=>5
+describe 'clicks'
+
+
+--Task2
+put 'clicks','192.168.107.26','hits:URL','www.acadgild.com/'
+put 'clicks','192.168.107.26','hits:NOOfHits','6'
+put 'clicks','192.168.107.26','hits:NoOfMisses','0'
+
+put 'clicks','192.168.200.68','hits:URL','www.cloudera.com/'
+put 'clicks','192.168.200.68','hits:NOOfHits','8'
+put 'clicks','192.168.200.68','hits:NoOfMisses','6'
+
+put 'clicks','192.168.96.28','hits:URL','www.google.com/'
+put 'clicks','192.168.96.28','hits:NOOfHits','6'
+put 'clicks','192.168.96.28','hits:NoOfMisses','5'
+scan 'clicks'
